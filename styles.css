@@ -1,0 +1,206 @@
+/* Reset de estilos */
+body, h1, h2, p, ul, li, img, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajusta el logo */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+    background-color: #719cdd;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #719cdd;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+body.inicio {
+    background-color: #719cdd; /* Color de fondo para la página de inicio */
+    
+}
+
+body.mision {
+    background-color: #719cdd; /* Color de fondo para la página de mision */
+    
+}
+
+body.vision {
+    background-color: #719cdd; /* Color de fondo para la página de visión */
+}
+
+body.propuesta {
+    background-color: #719cdd; /* Color de fondo para la página de visión */
+}
+
+body.servicios {
+    background-color: #719cdd; /* Color de fondo para la página de visión */
+}
+
+body.valores {
+    background-color: #719cdd; /* Color de fondo para la página de visión */
+}
+
+.checkboxes input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checkboxes label {
+    display: inline-block;
+    margin-right: 20px;
+}
+/* Estilos para las imágenes en las secciones */
+.section-content {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    flex: 1;
+    float: left;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Estilos para las imágenes en las secciones */
+.section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-text,
+.text-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-text img,
+.text-image img {
+    max-width: 45%;
+}
+
+.text {
+    flex: 1;
+    padding: 0 20px;
+}
+.text-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text-image img {
+    max-width: 45%;
+    order: 2; /* Cambia el orden de la imagen */
+}
+
+
