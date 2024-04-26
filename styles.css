@@ -12,7 +12,7 @@ body, html {
     height: 100%;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
 
@@ -26,8 +26,9 @@ header {
   
 }
 .logo {
-    max-width: 80%; /* Ancho máximo del div del logo */
     margin-bottom: 10px; /* Espacio entre el logo y los iconos de redes sociales */
+    max-width: 200px; /* Tamaño máximo del logo */
+    flex-shrink: 0; /* Evita que el logo se reduzca */
 }
 
 .logo img {
@@ -78,17 +79,20 @@ ul {
     margin-left: 20px;
     margin-bottom: 20px;
 }
-
 footer {
     background-color: #ffffff; /* Fondo blanco */
     color: #333; /* Color de texto */
     text-align: center;
     padding: 20px;
+    width: 100%; /* Ancho completo */
+   
+    bottom: 0; /* Fijar al fondo */
 }
 
-footer p {
+
+/*footer p {
     margin: 0;
-}
+}*/
 
 form label {
     display: block;
@@ -152,12 +156,12 @@ body.valores {
     flex: 1;
     float: left;
     height: auto;
-    width: 100%;
+    width: 80%;
     padding: 20px;
 }
 
 .image img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 .additional-image {
@@ -217,4 +221,35 @@ body.valores {
     .image-text img {
         width: 100%; /* Ajusta el ancho de la imagen al tamaño de la pantalla */
     }
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px; /* Ancho del label */
+    margin-right: 15px; /* Espacio entre el label y el input */
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1; /* El input o textarea ocupará todo el espacio restante */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button[type="submit"] {
+    background-color: #0D6EFD; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #34556C; /* Color de fondo al pasar el cursor */
 }
