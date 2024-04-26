@@ -4,6 +4,7 @@ body, h1, h2, p, ul, li, img, form, input, textarea, button {
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Estilos generales */
 body, html {
     margin: 0;
@@ -21,24 +22,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+  
+}
+.logo {
+    max-width: 80%; /* Ancho máximo del div del logo */
+    margin-bottom: 10px; /* Espacio entre el logo y los iconos de redes sociales */
 }
 
 .logo img {
-    height: 50px; /* Ajusta el logo */
+    max-width: 100%; /* Hace que la imagen del logo sea responsive */
+    height: auto;
 }
+
 
 nav ul {
     list-style-type: none;
+    text-align: center; /* Centra los elementos del menú */
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #0D6EFD;
     font-weight: bold;
 }
 
@@ -51,6 +61,7 @@ section {
 .section-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px; /* Ajusta el espaciado en las secciones */
 }
 
 h2 {
@@ -69,8 +80,8 @@ ul {
 }
 
 footer {
-    background-color: #719cdd;
-    color: #fff;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Color de texto */
     text-align: center;
     padding: 20px;
 }
@@ -112,30 +123,13 @@ form button:hover {
     background-color: #555;
 }
 
-body.inicio {
-    background-color: #719cdd; /* Color de fondo para la página de inicio */
-    
-}
-
-body.mision {
-    background-color: #719cdd; /* Color de fondo para la página de mision */
-    
-}
-
-body.vision {
-    background-color: #719cdd; /* Color de fondo para la página de visión */
-}
-
-body.propuesta {
-    background-color: #719cdd; /* Color de fondo para la página de visión */
-}
-
-body.servicios {
-    background-color: #719cdd; /* Color de fondo para la página de visión */
-}
-
+body.inicio,
+body.mision,
+body.vision,
+body.propuesta,
+body.servicios,
 body.valores {
-    background-color: #719cdd; /* Color de fondo para la página de visión */
+    background-color: #719cdd; /* Color de fondo para las páginas */
 }
 
 .checkboxes input[type="checkbox"] {
@@ -147,6 +141,7 @@ body.valores {
     display: inline-block;
     margin-right: 20px;
 }
+
 /* Estilos para las imágenes en las secciones */
 .section-content {
     display: flex;
@@ -156,11 +151,19 @@ body.valores {
 .image {
     flex: 1;
     float: left;
+    height: auto;
+    width: 100%;
+    padding: 20px;
 }
 
 .image img {
     max-width: 100%;
     height: auto;
+}
+.additional-image {
+   /* position: absolute;*/
+    bottom: 0;
+    left: 0;
 }
 
 .text {
@@ -184,13 +187,14 @@ body.valores {
 
 .image-text img,
 .text-image img {
-    max-width: 45%;
+    max-width: 50%;
 }
 
 .text {
     flex: 1;
     padding: 0 20px;
 }
+
 .text-image {
     display: flex;
     align-items: center;
@@ -203,4 +207,14 @@ body.valores {
     order: 2; /* Cambia el orden de la imagen */
 }
 
+/* Media queries para estilos responsive */
+@media screen and (max-width: 767px) {
+    nav ul li {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-bottom: 10px; /* Ajusta el espacio entre elementos del menú */
+    }
 
+    .image-text img {
+        width: 100%; /* Ajusta el ancho de la imagen al tamaño de la pantalla */
+    }
+}
